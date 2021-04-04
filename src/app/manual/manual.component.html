@@ -1,0 +1,55 @@
+<h2>1. Setting components manually in a project</h2>
+<p>
+  All the components need to be registered within the app module in order to be
+  used by Angular. The file <code>src\app\app.module.ts</code> is where we
+  configure our components:
+</p>
+<img src="/assets/images/app.module.ts.jpg" alt="App module file" />
+<br /><br />
+<ol>  
+  <li>
+    Create the component TypeScript file. Ex.
+    <code>mycomponent.component.ts</code>
+  </li>
+  <li>
+    Import the angular component
+    <code>import {{ " { MyComponent } " }} from '@angular/core'</code>.
+  </li>
+  <li>
+    Configure the component decorator <code>@Component</code> assigning the
+    right values to <code>selector, templateURL</code> and
+    <code>styleUrls</code>:
+    <br /><br />
+    <img
+      width="450em"
+      src="/assets/images/my.component.ts-file.jpg"
+      alt="App module file"
+    />
+    <br />
+    <br />
+  </li>
+  <li>
+    Import de component in the app:
+    <code>import {{ " { MyComponent } " }} from './mycomponent.component'</code
+    >. There is no need to type <code>mycomponent.component.ts</code>
+  </li>
+  <li>
+    Declaring it as an element in the <code>declarations</code> array from the
+    <code>@NgModule</code> decorator:
+  </li>
+  <br />
+  <img
+    width="450em"
+    src="/assets/images/app.module.ts-file.jpg"
+    alt="App module file"
+  />
+  <br/><br/>
+  <li>
+    Create the component template. Ex.
+    <code>mycomponent.component.html</code>
+  </li>
+  <li>
+    Create the component style sheet. Ex.
+    <code>mycomponent.component.css</code>
+  </li>
+</ol>
