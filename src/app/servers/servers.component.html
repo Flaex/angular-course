@@ -1,0 +1,20 @@
+<label>Server name</label>
+<!-- <input type="text" class="form-control" (input)="onUpdateServername($event)" /> -->
+<input type="text" class="form-control" [(ngModel)]="serverName" />
+<p>{{ serverName }}</p>
+<button
+  class="btn btn-primary"
+  [disabled]="!allowNewServer"
+  (click)="onCreateServer()"
+>
+  Add server
+</button>
+<!-- <p [innerText]="allowNewServer"></p> -->
+<p>{{ serverCreationStatus }}</p>
+<app-server></app-server>
+<app-server></app-server>
+
+// Línea 2 y 8 Event binding
+// línea 3 Two-way data binding ngModel directive 
+// Línea 4 String interpolation binding
+// Linea 7 Property binding 
