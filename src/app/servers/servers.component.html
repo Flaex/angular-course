@@ -26,8 +26,7 @@
 
 <p *ngIf="serverCreated">Server was created, server name is {{ serverName }}</p>
 
-<app-server></app-server>
-<app-server></app-server>
+<!-- *ngFor nos sirve para recorrer un array y renderizar sus elementos dentro de un componente -->
+<app-server *ngFor="let server of servers"></app-server>
 
-// Línea 2 y 8 Event binding // línea 3 Two-way data binding ngModel directive
-// Línea 4 String interpolation binding // Linea 7 Property binding
+
